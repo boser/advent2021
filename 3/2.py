@@ -40,8 +40,6 @@ def main():
             else:
                 co_input = list(filter(lambda input: True if input[idx] == '1' else False, co_input))
 
-        # print(ox_input)   
-        # print(co_input)   
 
     ox_input = ox_input[0]
     co_input = co_input[0]
@@ -49,29 +47,6 @@ def main():
     print(ox_input)   
     print(co_input)   
     print(int(co_input, 2),int(ox_input, 2), int(ox_input, 2) * int(co_input, 2))
-
-    
-    # for idx in range(str_size):
-
-
-    # print(get_most_common_bit_at_index(0, input))
-    # bits = []
-
-    # for idx, init in enumerate(input[0]):
-    #     if len(bits) <= idx:
-    #         bits.append(0)
-
-    # for line in input:
-    #     for idx, char in enumerate(line):
-    #         bits[idx] += int(char)
-
-    # print(bits)
-    # gamma = ''.join(list(map(lambda bit: '1' if bit > 500 else '0', bits)))
-    # epsilon = ''.join(list(map(lambda bit: '0' if bit > 500 else '1', bits)))
-
-    # print('gamma', gamma,  int(gamma,2))
-    # print('epsilon', epsilon, int(epsilon,2))
-    # print(int(gamma,2)*int(epsilon,2))
 
 if __name__ == '__main__':
     main()
